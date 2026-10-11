@@ -1,0 +1,99 @@
+{
+    "experiment": "ML vs Random fault prioritization",
+    "comparison_basis": "relative Hard-fault recall",
+    "benchmarks": [
+        "c17",
+        "c432",
+        "c499"
+    ],
+    "budgets": [
+        10,
+        20,
+        30
+    ],
+    "summary": {
+        "ml_wins": 5,
+        "random_wins": 4,
+        "ties": 0
+    },
+    "results": [
+        {
+            "benchmark": "c17",
+            "budgets": {
+                "10": {
+                    "ml_hard_recall": 0.2222222222222222,
+                    "random_hard_recall": 0.08822222222222334,
+                    "absolute_improvement": 0.13399999999999887,
+                    "relative_improvement": 1.5188916876573986,
+                    "winner": "ML"
+                },
+                "20": {
+                    "ml_hard_recall": 0.3333333333333333,
+                    "random_hard_recall": 0.17755555555555808,
+                    "absolute_improvement": 0.15577777777777524,
+                    "relative_improvement": 0.877346683354166,
+                    "winner": "ML"
+                },
+                "30": {
+                    "ml_hard_recall": 0.3333333333333333,
+                    "random_hard_recall": 0.2725555555555585,
+                    "absolute_improvement": 0.06077777777777482,
+                    "relative_improvement": 0.22299225438237566,
+                    "winner": "ML"
+                }
+            }
+        },
+        {
+            "benchmark": "c432",
+            "budgets": {
+                "10": {
+                    "ml_hard_recall": 0.038461538461538464,
+                    "random_hard_recall": 0.09942307692307685,
+                    "absolute_improvement": -0.060961538461538387,
+                    "relative_improvement": -0.613152804642166,
+                    "winner": "Random"
+                },
+                "20": {
+                    "ml_hard_recall": 0.09615384615384616,
+                    "random_hard_recall": 0.19922115384615321,
+                    "absolute_improvement": -0.10306730769230706,
+                    "relative_improvement": -0.5173512235146468,
+                    "winner": "Random"
+                },
+                "30": {
+                    "ml_hard_recall": 0.11538461538461539,
+                    "random_hard_recall": 0.30118269230769223,
+                    "absolute_improvement": -0.18579807692307684,
+                    "relative_improvement": -0.6168949334354946,
+                    "winner": "Random"
+                }
+            }
+        },
+        {
+            "benchmark": "c499",
+            "budgets": {
+                "10": {
+                    "ml_hard_recall": 0.04672897196261682,
+                    "random_hard_recall": 0.09914953271028028,
+                    "absolute_improvement": -0.05242056074766346,
+                    "relative_improvement": -0.5287020454331224,
+                    "winner": "Random"
+                },
+                "20": {
+                    "ml_hard_recall": 0.2336448598130841,
+                    "random_hard_recall": 0.20070093457943863,
+                    "absolute_improvement": 0.03294392523364548,
+                    "relative_improvement": 0.16414435389988716,
+                    "winner": "ML"
+                },
+                "30": {
+                    "ml_hard_recall": 0.5327102803738317,
+                    "random_hard_recall": 0.3015607476635513,
+                    "absolute_improvement": 0.23114953271028044,
+                    "relative_improvement": 0.7665106765425982,
+                    "winner": "ML"
+                }
+            }
+        }
+    ]
+}

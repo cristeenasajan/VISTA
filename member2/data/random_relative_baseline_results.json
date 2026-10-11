@@ -1,0 +1,45 @@
+{
+    "experiment": "Relative random fault prioritization baseline",
+    "target": "relative_difficulty",
+    "label_definition": {
+        "Hard": "bottom 25 percent detection count within each benchmark",
+        "Medium": "middle 50 percent detection count within each benchmark",
+        "Easy": "top 25 percent detection count within each benchmark"
+    },
+    "repetitions": 1000,
+    "results": [
+        {
+            "benchmark": "c17",
+            "total_faults": 22,
+            "relative_hard_faults": 9,
+            "repetitions": 1000,
+            "average_hard_fault_recall": {
+                "10": 0.08822222222222334,
+                "20": 0.17755555555555808,
+                "30": 0.2725555555555585
+            }
+        },
+        {
+            "benchmark": "c432",
+            "total_faults": 414,
+            "relative_hard_faults": 104,
+            "repetitions": 1000,
+            "average_hard_fault_recall": {
+                "10": 0.09942307692307685,
+                "20": 0.19922115384615321,
+                "30": 0.30118269230769223
+            }
+        },
+        {
+            "benchmark": "c499",
+            "total_faults": 430,
+            "relative_hard_faults": 107,
+            "repetitions": 1000,
+            "average_hard_fault_recall": {
+                "10": 0.09914953271028028,
+                "20": 0.20070093457943863,
+                "30": 0.3015607476635513
+            }
+        }
+    ]
+}

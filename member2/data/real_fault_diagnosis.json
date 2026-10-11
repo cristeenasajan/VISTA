@@ -1,0 +1,20 @@
+[
+    {
+        "fault_id": "Y_SA0",
+        "detected_patterns": [
+            "11"
+        ],
+        "detection_count": 1,
+        "difficulty": "Medium"
+    },
+    {
+        "fault_id": "Y_SA1",
+        "detected_patterns": [
+            "00",
+            "01",
+            "10"
+        ],
+        "detection_count": 3,
+        "difficulty": "Easy"
+    }
+]

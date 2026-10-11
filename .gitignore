@@ -1,0 +1,40 @@
+
+# Python environments
+.venv/
+.venv_test/
+.venv_clean/
+venv/
+env/
+
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.vcd
+parsetab.py
+parser.out
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Generated fault-injection testbenches and results
+member2/data/c432_generated_faults/
+member2/data/generated_faults/
+member2/data/c17_generated_faults/
+benchmarks/c432_generated_faults/
+benchmarks/generated_faults/
+benchmarks/c499_generated_faults/
+benchmarks/c17_generated_faults/
+# Compiled simulation and Verilator artifacts
+benchmarks/obj_dir/
+benchmarks/*_sim
+benchmarks/*_sim.exeersCristeenaDesktopVISTA
+
+/ersCristeenaDesktopVISTA

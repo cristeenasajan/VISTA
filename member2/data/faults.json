@@ -1,0 +1,17 @@
+[
+    {
+        "fault_id": "F001",
+        "net": "N1",
+        "fault_type": "SA0"
+    },
+    {
+        "fault_id": "F002",
+        "net": "N1",
+        "fault_type": "SA1"
+    },
+    {
+        "fault_id": "F003",
+        "net": "N2",
+        "fault_type": "SA0"
+    }
+]

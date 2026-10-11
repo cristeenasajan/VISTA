@@ -1,0 +1,39 @@
+{
+    "experiment": "Random fault prioritization baseline",
+    "repetitions": 1000,
+    "results": [
+        {
+            "benchmark": "c17",
+            "total_faults": 22,
+            "hard_faults": 0,
+            "repetitions": 1000,
+            "average_hard_fault_recall": {
+                "10": 0.0,
+                "20": 0.0,
+                "30": 0.0
+            }
+        },
+        {
+            "benchmark": "c432",
+            "total_faults": 414,
+            "hard_faults": 3,
+            "repetitions": 1000,
+            "average_hard_fault_recall": {
+                "10": 0.0999999999999997,
+                "20": 0.20000000000000068,
+                "30": 0.3006666666666665
+            }
+        },
+        {
+            "benchmark": "c499",
+            "total_faults": 430,
+            "hard_faults": 1,
+            "repetitions": 1000,
+            "average_hard_fault_recall": {
+                "10": 0.088,
+                "20": 0.189,
+                "30": 0.291
+            }
+        }
+    ]
+}

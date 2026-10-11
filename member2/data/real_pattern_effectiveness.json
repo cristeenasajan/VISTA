@@ -1,0 +1,30 @@
+[
+    {
+        "pattern_id": "00",
+        "detected_faults": [
+            "Y_SA1"
+        ],
+        "detection_count": 1
+    },
+    {
+        "pattern_id": "01",
+        "detected_faults": [
+            "Y_SA1"
+        ],
+        "detection_count": 1
+    },
+    {
+        "pattern_id": "10",
+        "detected_faults": [
+            "Y_SA1"
+        ],
+        "detection_count": 1
+    },
+    {
+        "pattern_id": "11",
+        "detected_faults": [
+            "Y_SA0"
+        ],
+        "detection_count": 1
+    }
+]

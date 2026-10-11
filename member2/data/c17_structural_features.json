@@ -1,0 +1,105 @@
+{
+    "benchmark": "c17",
+    "gate_count": 6,
+    "features": [
+        {
+            "net": "N1",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 1,
+            "logic_depth": 0,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N10",
+            "net_type": "internal",
+            "gate_type": "nand",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N11",
+            "net_type": "internal",
+            "gate_type": "nand",
+            "fanin": 2,
+            "fanout": 2,
+            "logic_depth": 1,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N16",
+            "net_type": "internal",
+            "gate_type": "nand",
+            "fanin": 2,
+            "fanout": 2,
+            "logic_depth": 2,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N19",
+            "net_type": "internal",
+            "gate_type": "nand",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 2,
+            "distance_to_output": -1
+        },
+        {
+            "net": "N2",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 1,
+            "logic_depth": 0,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N22",
+            "net_type": "primary_input",
+            "gate_type": "nand",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 3,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N23",
+            "net_type": "internal",
+            "gate_type": "nand",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 3,
+            "distance_to_output": -1
+        },
+        {
+            "net": "N3",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 2,
+            "logic_depth": 0,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N6",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 1,
+            "logic_depth": 0,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N7",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 1,
+            "logic_depth": 0,
+            "distance_to_output": -1
+        }
+    ]
+}

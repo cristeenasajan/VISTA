@@ -1,0 +1,47 @@
+[
+    {
+        "pattern_id": "P001",
+        "fault_id": "F001",
+        "detected": true
+    },
+    {
+        "pattern_id": "P001",
+        "fault_id": "F002",
+        "detected": false
+    },
+    {
+        "pattern_id": "P001",
+        "fault_id": "F003",
+        "detected": true
+    },
+    {
+        "pattern_id": "P002",
+        "fault_id": "F001",
+        "detected": true
+    },
+    {
+        "pattern_id": "P002",
+        "fault_id": "F002",
+        "detected": true
+    },
+    {
+        "pattern_id": "P002",
+        "fault_id": "F003",
+        "detected": false
+    },
+    {
+        "pattern_id": "P003",
+        "fault_id": "F001",
+        "detected": false
+    },
+    {
+        "pattern_id": "P003",
+        "fault_id": "F002",
+        "detected": false
+    },
+    {
+        "pattern_id": "P003",
+        "fault_id": "F003",
+        "detected": false
+    }
+]

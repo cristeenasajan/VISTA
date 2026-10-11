@@ -1,0 +1,9 @@
+[
+    {
+        "fault_id": "Y_SA0",
+        "detection_count": 1,
+        "pattern_count": 4,
+        "detection_ratio": 0.25,
+        "difficulty": "Medium"
+    }
+]

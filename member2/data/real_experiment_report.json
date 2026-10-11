@@ -1,0 +1,8 @@
+{
+    "total_faults": 2,
+    "detected_faults": 2,
+    "fault_coverage_percent": 100.0,
+    "original_patterns": 4,
+    "selected_patterns": 2,
+    "pattern_reduction_percent": 50.0
+}

@@ -1,0 +1,434 @@
+[
+    {
+        "fault_id": "F001",
+        "net": "N1",
+        "fault_type": "SA0",
+        "detected_patterns": [
+            "10100",
+            "10101",
+            "10110",
+            "10111",
+            "11110",
+            "11111"
+        ],
+        "detection_count": 6,
+        "difficulty": "Medium"
+    },
+    {
+        "fault_id": "F002",
+        "net": "N1",
+        "fault_type": "SA1",
+        "detected_patterns": [
+            "00100",
+            "00101",
+            "00110",
+            "00111",
+            "01110",
+            "01111"
+        ],
+        "detection_count": 6,
+        "difficulty": "Medium"
+    },
+    {
+        "fault_id": "F003",
+        "net": "N2",
+        "fault_type": "SA0",
+        "detected_patterns": [
+            "01000",
+            "01001",
+            "01010",
+            "01011",
+            "01100",
+            "01101",
+            "11000",
+            "11001",
+            "11010",
+            "11011",
+            "11100"
+        ],
+        "detection_count": 11,
+        "difficulty": "Easy"
+    },
+    {
+        "fault_id": "F004",
+        "net": "N2",
+        "fault_type": "SA1",
+        "detected_patterns": [
+            "00000",
+            "00001",
+            "00010",
+            "00011",
+            "00100",
+            "00101",
+            "10000",
+            "10001",
+            "10010",
+            "10011",
+            "10100"
+        ],
+        "detection_count": 11,
+        "difficulty": "Easy"
+    },
+    {
+        "fault_id": "F005",
+        "net": "N3",
+        "fault_type": "SA0",
+        "detected_patterns": [
+            "00111",
+            "01110",
+            "01111",
+            "10100",
+            "10101",
+            "10110",
+            "10111",
+            "11110",
+            "11111"
+        ],
+        "detection_count": 9,
+        "difficulty": "Easy"
+    },
+    {
+        "fault_id": "F006",
+        "net": "N3",
+        "fault_type": "SA1",
+        "detected_patterns": [
+            "00011",
+            "01010",
+            "01011",
+            "10000",
+            "10001",
+            "10010",
+            "10011",
+            "11010",
+            "11011"
+        ],
+        "detection_count": 9,
+        "difficulty": "Easy"
+    },
+    {
+        "fault_id": "F007",
+        "net": "N6",
+        "fault_type": "SA0",
+        "detected_patterns": [
+            "00111",
+            "01110",
+            "01111",
+            "10111",
+            "11110",
+            "11111"
+        ],
+        "detection_count": 6,
+        "difficulty": "Medium"
+    },
+    {
+        "fault_id": "F008",
+        "net": "N6",
+        "fault_type": "SA1",
+        "detected_patterns": [
+            "00101",
+            "01100",
+            "01101",
+            "10101",
+            "11100",
+            "11101"
+        ],
+        "detection_count": 6,
+        "difficulty": "Medium"
+    },
+    {
+        "fault_id": "F009",
+        "net": "N7",
+        "fault_type": "SA0",
+        "detected_patterns": [
+            "00001",
+            "00011",
+            "00101",
+            "10001",
+            "10011",
+            "10101"
+        ],
+        "detection_count": 6,
+        "difficulty": "Medium"
+    },
+    {
+        "fault_id": "F010",
+        "net": "N7",
+        "fault_type": "SA1",
+        "detected_patterns": [
+            "00000",
+            "00010",
+            "00100",
+            "10000",
+            "10010",
+            "10100"
+        ],
+        "detection_count": 6,
+        "difficulty": "Medium"
+    },
+    {
+        "fault_id": "F011",
+        "net": "N10",
+        "fault_type": "SA0",
+        "detected_patterns": [
+            "00000",
+            "00001",
+            "00010",
+            "00011",
+            "00100",
+            "00101",
+            "00110",
+            "00111",
+            "01110",
+            "01111",
+            "10000",
+            "10001",
+            "10010",
+            "10011"
+        ],
+        "detection_count": 14,
+        "difficulty": "Easy"
+    },
+    {
+        "fault_id": "F012",
+        "net": "N10",
+        "fault_type": "SA1",
+        "detected_patterns": [
+            "10100",
+            "10101",
+            "10110",
+            "10111",
+            "11110",
+            "11111"
+        ],
+        "detection_count": 6,
+        "difficulty": "Medium"
+    },
+    {
+        "fault_id": "F013",
+        "net": "N11",
+        "fault_type": "SA0",
+        "detected_patterns": [
+            "00001",
+            "00011",
+            "00101",
+            "01000",
+            "01001",
+            "01010",
+            "01011",
+            "01100",
+            "01101",
+            "10001",
+            "10011",
+            "10101",
+            "11000",
+            "11001",
+            "11010",
+            "11011",
+            "11100",
+            "11101"
+        ],
+        "detection_count": 18,
+        "difficulty": "Easy"
+    },
+    {
+        "fault_id": "F014",
+        "net": "N11",
+        "fault_type": "SA1",
+        "detected_patterns": [
+            "00111",
+            "01110",
+            "01111",
+            "10111",
+            "11110",
+            "11111"
+        ],
+        "detection_count": 6,
+        "difficulty": "Medium"
+    },
+    {
+        "fault_id": "F015",
+        "net": "N16",
+        "fault_type": "SA0",
+        "detected_patterns": [
+            "00000",
+            "00001",
+            "00010",
+            "00011",
+            "00100",
+            "00101",
+            "00110",
+            "00111",
+            "01110",
+            "01111",
+            "10000",
+            "10001",
+            "10010",
+            "10011",
+            "10100",
+            "10110",
+            "10111",
+            "11110",
+            "11111"
+        ],
+        "detection_count": 19,
+        "difficulty": "Easy"
+    },
+    {
+        "fault_id": "F016",
+        "net": "N16",
+        "fault_type": "SA1",
+        "detected_patterns": [
+            "01000",
+            "01001",
+            "01010",
+            "01011",
+            "01100",
+            "01101",
+            "11000",
+            "11001",
+            "11010",
+            "11011",
+            "11100"
+        ],
+        "detection_count": 11,
+        "difficulty": "Easy"
+    },
+    {
+        "fault_id": "F017",
+        "net": "N19",
+        "fault_type": "SA0",
+        "detected_patterns": [
+            "00000",
+            "00010",
+            "00100",
+            "00110",
+            "00111",
+            "01110",
+            "01111",
+            "10000",
+            "10010",
+            "10100",
+            "10110",
+            "10111",
+            "11110",
+            "11111"
+        ],
+        "detection_count": 14,
+        "difficulty": "Easy"
+    },
+    {
+        "fault_id": "F018",
+        "net": "N19",
+        "fault_type": "SA1",
+        "detected_patterns": [
+            "00001",
+            "00011",
+            "00101",
+            "10001",
+            "10011",
+            "10101"
+        ],
+        "detection_count": 6,
+        "difficulty": "Medium"
+    },
+    {
+        "fault_id": "F019",
+        "net": "N22",
+        "fault_type": "SA0",
+        "detected_patterns": [
+            "01000",
+            "01001",
+            "01010",
+            "01011",
+            "01100",
+            "01101",
+            "10100",
+            "10101",
+            "10110",
+            "10111",
+            "11000",
+            "11001",
+            "11010",
+            "11011",
+            "11100",
+            "11101",
+            "11110",
+            "11111"
+        ],
+        "detection_count": 18,
+        "difficulty": "Easy"
+    },
+    {
+        "fault_id": "F020",
+        "net": "N22",
+        "fault_type": "SA1",
+        "detected_patterns": [
+            "00000",
+            "00001",
+            "00010",
+            "00011",
+            "00100",
+            "00101",
+            "00110",
+            "00111",
+            "01110",
+            "01111",
+            "10000",
+            "10001",
+            "10010",
+            "10011"
+        ],
+        "detection_count": 14,
+        "difficulty": "Easy"
+    },
+    {
+        "fault_id": "F021",
+        "net": "N23",
+        "fault_type": "SA0",
+        "detected_patterns": [
+            "00001",
+            "00011",
+            "00101",
+            "01000",
+            "01001",
+            "01010",
+            "01011",
+            "01100",
+            "01101",
+            "10001",
+            "10011",
+            "10101",
+            "11000",
+            "11001",
+            "11010",
+            "11011",
+            "11100",
+            "11101"
+        ],
+        "detection_count": 18,
+        "difficulty": "Easy"
+    },
+    {
+        "fault_id": "F022",
+        "net": "N23",
+        "fault_type": "SA1",
+        "detected_patterns": [
+            "00000",
+            "00010",
+            "00100",
+            "00110",
+            "00111",
+            "01110",
+            "01111",
+            "10000",
+            "10010",
+            "10100",
+            "10110",
+            "10111",
+            "11110",
+            "11111"
+        ],
+        "detection_count": 14,
+        "difficulty": "Easy"
+    }
+]

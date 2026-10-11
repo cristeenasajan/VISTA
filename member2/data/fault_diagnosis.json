@@ -1,0 +1,27 @@
+[
+    {
+        "fault_id": "F001",
+        "detected_by": [
+            "P001",
+            "P002"
+        ],
+        "detection_count": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "fault_id": "F002",
+        "detected_by": [
+            "P002"
+        ],
+        "detection_count": 1,
+        "difficulty": "Medium"
+    },
+    {
+        "fault_id": "F003",
+        "detected_by": [
+            "P001"
+        ],
+        "detection_count": 1,
+        "difficulty": "Medium"
+    }
+]

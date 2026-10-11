@@ -1,0 +1,428 @@
+[
+    {
+        "pattern": "00000",
+        "detected_faults": [
+            "F004",
+            "F010",
+            "F011",
+            "F015",
+            "F017",
+            "F020",
+            "F022"
+        ],
+        "fault_count": 7
+    },
+    {
+        "pattern": "00001",
+        "detected_faults": [
+            "F004",
+            "F009",
+            "F011",
+            "F013",
+            "F015",
+            "F018",
+            "F020",
+            "F021"
+        ],
+        "fault_count": 8
+    },
+    {
+        "pattern": "00010",
+        "detected_faults": [
+            "F004",
+            "F010",
+            "F011",
+            "F015",
+            "F017",
+            "F020",
+            "F022"
+        ],
+        "fault_count": 7
+    },
+    {
+        "pattern": "00011",
+        "detected_faults": [
+            "F004",
+            "F006",
+            "F009",
+            "F011",
+            "F013",
+            "F015",
+            "F018",
+            "F020",
+            "F021"
+        ],
+        "fault_count": 9
+    },
+    {
+        "pattern": "00100",
+        "detected_faults": [
+            "F002",
+            "F004",
+            "F010",
+            "F011",
+            "F015",
+            "F017",
+            "F020",
+            "F022"
+        ],
+        "fault_count": 8
+    },
+    {
+        "pattern": "00101",
+        "detected_faults": [
+            "F002",
+            "F004",
+            "F008",
+            "F009",
+            "F011",
+            "F013",
+            "F015",
+            "F018",
+            "F020",
+            "F021"
+        ],
+        "fault_count": 10
+    },
+    {
+        "pattern": "00110",
+        "detected_faults": [
+            "F002",
+            "F011",
+            "F015",
+            "F017",
+            "F020",
+            "F022"
+        ],
+        "fault_count": 6
+    },
+    {
+        "pattern": "00111",
+        "detected_faults": [
+            "F002",
+            "F005",
+            "F007",
+            "F011",
+            "F014",
+            "F015",
+            "F017",
+            "F020",
+            "F022"
+        ],
+        "fault_count": 9
+    },
+    {
+        "pattern": "01000",
+        "detected_faults": [
+            "F003",
+            "F013",
+            "F016",
+            "F019",
+            "F021"
+        ],
+        "fault_count": 5
+    },
+    {
+        "pattern": "01001",
+        "detected_faults": [
+            "F003",
+            "F013",
+            "F016",
+            "F019",
+            "F021"
+        ],
+        "fault_count": 5
+    },
+    {
+        "pattern": "01010",
+        "detected_faults": [
+            "F003",
+            "F006",
+            "F013",
+            "F016",
+            "F019",
+            "F021"
+        ],
+        "fault_count": 6
+    },
+    {
+        "pattern": "01011",
+        "detected_faults": [
+            "F003",
+            "F006",
+            "F013",
+            "F016",
+            "F019",
+            "F021"
+        ],
+        "fault_count": 6
+    },
+    {
+        "pattern": "01100",
+        "detected_faults": [
+            "F003",
+            "F008",
+            "F013",
+            "F016",
+            "F019",
+            "F021"
+        ],
+        "fault_count": 6
+    },
+    {
+        "pattern": "01101",
+        "detected_faults": [
+            "F003",
+            "F008",
+            "F013",
+            "F016",
+            "F019",
+            "F021"
+        ],
+        "fault_count": 6
+    },
+    {
+        "pattern": "01110",
+        "detected_faults": [
+            "F002",
+            "F005",
+            "F007",
+            "F011",
+            "F014",
+            "F015",
+            "F017",
+            "F020",
+            "F022"
+        ],
+        "fault_count": 9
+    },
+    {
+        "pattern": "01111",
+        "detected_faults": [
+            "F002",
+            "F005",
+            "F007",
+            "F011",
+            "F014",
+            "F015",
+            "F017",
+            "F020",
+            "F022"
+        ],
+        "fault_count": 9
+    },
+    {
+        "pattern": "10000",
+        "detected_faults": [
+            "F004",
+            "F006",
+            "F010",
+            "F011",
+            "F015",
+            "F017",
+            "F020",
+            "F022"
+        ],
+        "fault_count": 8
+    },
+    {
+        "pattern": "10001",
+        "detected_faults": [
+            "F004",
+            "F006",
+            "F009",
+            "F011",
+            "F013",
+            "F015",
+            "F018",
+            "F020",
+            "F021"
+        ],
+        "fault_count": 9
+    },
+    {
+        "pattern": "10010",
+        "detected_faults": [
+            "F004",
+            "F006",
+            "F010",
+            "F011",
+            "F015",
+            "F017",
+            "F020",
+            "F022"
+        ],
+        "fault_count": 8
+    },
+    {
+        "pattern": "10011",
+        "detected_faults": [
+            "F004",
+            "F006",
+            "F009",
+            "F011",
+            "F013",
+            "F015",
+            "F018",
+            "F020",
+            "F021"
+        ],
+        "fault_count": 9
+    },
+    {
+        "pattern": "10100",
+        "detected_faults": [
+            "F001",
+            "F004",
+            "F005",
+            "F010",
+            "F012",
+            "F015",
+            "F017",
+            "F019",
+            "F022"
+        ],
+        "fault_count": 9
+    },
+    {
+        "pattern": "10101",
+        "detected_faults": [
+            "F001",
+            "F005",
+            "F008",
+            "F009",
+            "F012",
+            "F013",
+            "F018",
+            "F019",
+            "F021"
+        ],
+        "fault_count": 9
+    },
+    {
+        "pattern": "10110",
+        "detected_faults": [
+            "F001",
+            "F005",
+            "F012",
+            "F015",
+            "F017",
+            "F019",
+            "F022"
+        ],
+        "fault_count": 7
+    },
+    {
+        "pattern": "10111",
+        "detected_faults": [
+            "F001",
+            "F005",
+            "F007",
+            "F012",
+            "F014",
+            "F015",
+            "F017",
+            "F019",
+            "F022"
+        ],
+        "fault_count": 9
+    },
+    {
+        "pattern": "11000",
+        "detected_faults": [
+            "F003",
+            "F013",
+            "F016",
+            "F019",
+            "F021"
+        ],
+        "fault_count": 5
+    },
+    {
+        "pattern": "11001",
+        "detected_faults": [
+            "F003",
+            "F013",
+            "F016",
+            "F019",
+            "F021"
+        ],
+        "fault_count": 5
+    },
+    {
+        "pattern": "11010",
+        "detected_faults": [
+            "F003",
+            "F006",
+            "F013",
+            "F016",
+            "F019",
+            "F021"
+        ],
+        "fault_count": 6
+    },
+    {
+        "pattern": "11011",
+        "detected_faults": [
+            "F003",
+            "F006",
+            "F013",
+            "F016",
+            "F019",
+            "F021"
+        ],
+        "fault_count": 6
+    },
+    {
+        "pattern": "11100",
+        "detected_faults": [
+            "F003",
+            "F008",
+            "F013",
+            "F016",
+            "F019",
+            "F021"
+        ],
+        "fault_count": 6
+    },
+    {
+        "pattern": "11101",
+        "detected_faults": [
+            "F008",
+            "F013",
+            "F019",
+            "F021"
+        ],
+        "fault_count": 4
+    },
+    {
+        "pattern": "11110",
+        "detected_faults": [
+            "F001",
+            "F005",
+            "F007",
+            "F012",
+            "F014",
+            "F015",
+            "F017",
+            "F019",
+            "F022"
+        ],
+        "fault_count": 9
+    },
+    {
+        "pattern": "11111",
+        "detected_faults": [
+            "F001",
+            "F005",
+            "F007",
+            "F012",
+            "F014",
+            "F015",
+            "F017",
+            "F019",
+            "F022"
+        ],
+        "fault_count": 9
+    }
+]

@@ -1,0 +1,80 @@
+{
+    "benchmark": "c432",
+    "samples": 414,
+    "features": [
+        "is_sa0",
+        "is_sa1",
+        "is_primary_input",
+        "is_primary_output",
+        "is_internal",
+        "gate_type",
+        "fanin",
+        "fanout",
+        "logic_depth",
+        "distance_to_output"
+    ],
+    "balanced_accuracy": 0.9768976897689768,
+    "macro_f1": 0.6361823361823362,
+    "classification_report": {
+        "Easy": {
+            "precision": 1.0,
+            "recall": 0.9306930693069307,
+            "f1-score": 0.9641025641025641,
+            "support": 101.0
+        },
+        "Hard": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1-score": 0.5,
+            "support": 1.0
+        },
+        "Medium": {
+            "precision": 0.2857142857142857,
+            "recall": 1.0,
+            "f1-score": 0.4444444444444444,
+            "support": 2.0
+        },
+        "accuracy": 0.9326923076923077,
+        "macro avg": {
+            "precision": 0.5396825396825397,
+            "recall": 0.9768976897689768,
+            "f1-score": 0.6361823361823362,
+            "support": 104.0
+        },
+        "weighted avg": {
+            "precision": 0.9798534798534798,
+            "recall": 0.9326923076923077,
+            "f1-score": 0.9496466140696909,
+            "support": 104.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            1,
+            0,
+            0
+        ],
+        [
+            0,
+            2,
+            0
+        ],
+        [
+            2,
+            5,
+            94
+        ]
+    ],
+    "feature_importance": {
+        "logic_depth": 0.21662673016989092,
+        "distance_to_output": 0.19119149310881653,
+        "gate_type": 0.163797671889824,
+        "is_sa0": 0.15043385439796864,
+        "is_sa1": 0.1357790887660333,
+        "fanout": 0.0592757967661592,
+        "fanin": 0.05855359188507569,
+        "is_internal": 0.014919421647034574,
+        "is_primary_input": 0.00840351079818877,
+        "is_primary_output": 0.0010188405710084756
+    }
+}

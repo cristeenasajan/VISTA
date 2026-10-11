@@ -1,0 +1,12 @@
+{
+    "original_pattern_count": 4,
+    "selected_pattern_count": 2,
+    "selected_patterns": [
+        "00",
+        "11"
+    ],
+    "covered_faults": [
+        "Y_SA1",
+        "Y_SA0"
+    ]
+}

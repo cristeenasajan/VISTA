@@ -1,0 +1,14 @@
+{
+    "original_patterns": 32,
+    "selected_patterns": [
+        "00101",
+        "10111",
+        "01010",
+        "00000"
+    ],
+    "selected_pattern_count": 4,
+    "faults_covered": 22,
+    "total_faults": 22,
+    "fault_coverage": 100.0,
+    "pattern_reduction": 87.5
+}

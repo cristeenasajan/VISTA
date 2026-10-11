@@ -1,0 +1,14 @@
+[
+    {
+        "pattern_id": "P001",
+        "input": "1010"
+    },
+    {
+        "pattern_id": "P002",
+        "input": "1100"
+    },
+    {
+        "pattern_id": "P003",
+        "input": "0110"
+    }
+]

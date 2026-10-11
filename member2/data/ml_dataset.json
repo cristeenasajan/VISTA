@@ -1,0 +1,23 @@
+[
+    {
+        "fault_id": "F001",
+        "detection_count": 2,
+        "pattern_count": 3,
+        "detection_ratio": 0.6666666666666666,
+        "difficulty": "Easy"
+    },
+    {
+        "fault_id": "F002",
+        "detection_count": 1,
+        "pattern_count": 3,
+        "detection_ratio": 0.3333333333333333,
+        "difficulty": "Medium"
+    },
+    {
+        "fault_id": "F003",
+        "detection_count": 1,
+        "pattern_count": 3,
+        "detection_ratio": 0.3333333333333333,
+        "difficulty": "Medium"
+    }
+]

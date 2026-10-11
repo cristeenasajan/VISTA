@@ -1,0 +1,1941 @@
+{
+    "benchmark": "c499",
+    "gate_count": 174,
+    "features": [
+        {
+            "net": "N1",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N101",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N105",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N109",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N113",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N117",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N121",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N125",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N129",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 1,
+            "logic_depth": 0,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N13",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N130",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 1,
+            "logic_depth": 0,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N131",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 1,
+            "logic_depth": 0,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N132",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 1,
+            "logic_depth": 0,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N133",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 1,
+            "logic_depth": 0,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N134",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 1,
+            "logic_depth": 0,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N135",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 1,
+            "logic_depth": 0,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N136",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 1,
+            "logic_depth": 0,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N137",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 8,
+            "logic_depth": 0,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N17",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N21",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N25",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N250",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N251",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N252",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N253",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N254",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N255",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N256",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N257",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N258",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N259",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N260",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N261",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N262",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N263",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N264",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N265",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 6
+        },
+        {
+            "net": "N266",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N267",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N268",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N269",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N270",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N271",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N272",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N273",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N274",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N275",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N276",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N277",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N278",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N279",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N280",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N281",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N282",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N283",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N284",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N285",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N286",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N287",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N288",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N289",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 1,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N29",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N290",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 2,
+            "logic_depth": 2,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N293",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 2,
+            "logic_depth": 2,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N296",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 2,
+            "logic_depth": 2,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N299",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 2,
+            "logic_depth": 2,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N302",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 2,
+            "logic_depth": 2,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N305",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 2,
+            "logic_depth": 2,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N308",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 2,
+            "logic_depth": 2,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N311",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 2,
+            "logic_depth": 2,
+            "distance_to_output": 5
+        },
+        {
+            "net": "N314",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 2,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N315",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 2,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N316",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 2,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N317",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 2,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N318",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 2,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N319",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 2,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N320",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 2,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N321",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 2,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N33",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N338",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 3,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N339",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 3,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N340",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 3,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N341",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 3,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N342",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 3,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N343",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 3,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N344",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 3,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N345",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 3,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N346",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 4,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N347",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 4,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N348",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 4,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N349",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 4,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N350",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 4,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N351",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 4,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N352",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 4,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N353",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 4,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N354",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 7,
+            "logic_depth": 5,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N367",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 7,
+            "logic_depth": 5,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N37",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N380",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 8,
+            "logic_depth": 5,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N393",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 8,
+            "logic_depth": 5,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N406",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 7,
+            "logic_depth": 5,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N41",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N419",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 7,
+            "logic_depth": 5,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N432",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 8,
+            "logic_depth": 5,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N445",
+            "net_type": "internal",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 8,
+            "logic_depth": 5,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N45",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N49",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N5",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N53",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N554",
+            "net_type": "internal",
+            "gate_type": "not",
+            "fanin": 1,
+            "fanout": 4,
+            "logic_depth": 6,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N555",
+            "net_type": "internal",
+            "gate_type": "not",
+            "fanin": 1,
+            "fanout": 4,
+            "logic_depth": 6,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N556",
+            "net_type": "internal",
+            "gate_type": "not",
+            "fanin": 1,
+            "fanout": 5,
+            "logic_depth": 6,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N559",
+            "net_type": "internal",
+            "gate_type": "not",
+            "fanin": 1,
+            "fanout": 5,
+            "logic_depth": 6,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N566",
+            "net_type": "internal",
+            "gate_type": "not",
+            "fanin": 1,
+            "fanout": 4,
+            "logic_depth": 6,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N567",
+            "net_type": "internal",
+            "gate_type": "not",
+            "fanin": 1,
+            "fanout": 5,
+            "logic_depth": 6,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N569",
+            "net_type": "internal",
+            "gate_type": "not",
+            "fanin": 1,
+            "fanout": 5,
+            "logic_depth": 6,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N57",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N570",
+            "net_type": "internal",
+            "gate_type": "not",
+            "fanin": 1,
+            "fanout": 4,
+            "logic_depth": 6,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N594",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 1,
+            "logic_depth": 7,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N595",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 1,
+            "logic_depth": 7,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N596",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 1,
+            "logic_depth": 7,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N597",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 1,
+            "logic_depth": 7,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N598",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 1,
+            "logic_depth": 7,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N599",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 1,
+            "logic_depth": 7,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N600",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 1,
+            "logic_depth": 7,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N601",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 1,
+            "logic_depth": 7,
+            "distance_to_output": 4
+        },
+        {
+            "net": "N602",
+            "net_type": "internal",
+            "gate_type": "or",
+            "fanin": 4,
+            "fanout": 4,
+            "logic_depth": 8,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N607",
+            "net_type": "internal",
+            "gate_type": "or",
+            "fanin": 4,
+            "fanout": 4,
+            "logic_depth": 8,
+            "distance_to_output": 3
+        },
+        {
+            "net": "N61",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N620",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 4,
+            "logic_depth": 9,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N625",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 4,
+            "logic_depth": 9,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N630",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 4,
+            "logic_depth": 9,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N635",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 4,
+            "logic_depth": 9,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N640",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 4,
+            "logic_depth": 9,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N645",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 4,
+            "logic_depth": 9,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N65",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N650",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 4,
+            "logic_depth": 9,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N655",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 4,
+            "fanout": 4,
+            "logic_depth": 9,
+            "distance_to_output": 2
+        },
+        {
+            "net": "N69",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N692",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N693",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N694",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N695",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N696",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N697",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N698",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N699",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N700",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N701",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N702",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N703",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N704",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N705",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N706",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N707",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N708",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N709",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N710",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N711",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N712",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N713",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N714",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N715",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N716",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N717",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N718",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N719",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N720",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N721",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N722",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N723",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 1,
+            "logic_depth": 10,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N724",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N725",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N726",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N727",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N728",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N729",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N73",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N730",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N731",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N732",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N733",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N734",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N735",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N736",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N737",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N738",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N739",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N740",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N741",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N742",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N743",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N744",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N745",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N746",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N747",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N748",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N749",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N750",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N751",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N752",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N753",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N754",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N755",
+            "net_type": "primary_output",
+            "gate_type": "xor",
+            "fanin": 2,
+            "fanout": 0,
+            "logic_depth": 11,
+            "distance_to_output": 0
+        },
+        {
+            "net": "N77",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N81",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N85",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N89",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N9",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N93",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "N97",
+            "net_type": "primary_input",
+            "gate_type": "INPUT",
+            "fanin": 0,
+            "fanout": 3,
+            "logic_depth": 0,
+            "distance_to_output": 1
+        },
+        {
+            "net": "n_74",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 2,
+            "logic_depth": 7,
+            "distance_to_output": 3
+        },
+        {
+            "net": "n_76",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 2,
+            "logic_depth": 7,
+            "distance_to_output": 3
+        },
+        {
+            "net": "n_78",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 2,
+            "logic_depth": 7,
+            "distance_to_output": 3
+        },
+        {
+            "net": "n_80",
+            "net_type": "internal",
+            "gate_type": "and",
+            "fanin": 2,
+            "fanout": 2,
+            "logic_depth": 7,
+            "distance_to_output": 3
+        }
+    ]
+}
