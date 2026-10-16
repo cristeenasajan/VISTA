@@ -38,3 +38,7 @@ benchmarks/*_sim
 benchmarks/*_sim.exeersCristeenaDesktopVISTA
 
 /ersCristeenaDesktopVISTA
+
+# Temporary repair environment and script backups
+.venv_repair/
+*.bak

@@ -1,5 +1,4 @@
 
-import argparse
 import json
 import os
 import subprocess
@@ -8,15 +7,16 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-MEMBER1_ROOT = PROJECT_ROOT.parent / "VISTA_member1"
+DATA_DIR = PROJECT_ROOT / "member2" / "data"
+BENCHMARK = PROJECT_ROOT / "benchmarks" / "c499.bench"
 
-MATRIX_FILE = MEMBER1_ROOT / "c499_detection_matrix_recheck.json"
-ATPG_FILE = MEMBER1_ROOT / "c499_atpg_report.json"
-REDUCED_REPORT = MEMBER1_ROOT / "c499_reduced_75_patterns.json"
-FRESH_MATRIX = MEMBER1_ROOT / "c499_reduced_75_matrix.json"
+MATRIX_FILE = DATA_DIR / "c499_detection_matrix_recheck.json"
+ATPG_FILE = DATA_DIR / "c499_atpg_report.json"
+REDUCED_REPORT = DATA_DIR / "c499_reduced_75_patterns.json"
+FRESH_MATRIX = DATA_DIR / "c499_reduced_75_matrix.json"
 
-RECORDS_FILE = PROJECT_ROOT / "member2" / "data" / "c499_simulation_records.json"
-COMPACTION_FILE = PROJECT_ROOT / "member2" / "data" / "c499_compaction_results.json"
+RECORDS_FILE = DATA_DIR / "c499_simulation_records.json"
+COMPACTION_FILE = DATA_DIR / "c499_compaction_results.json"
 
 ADAPTER = PROJECT_ROOT / "member2" / "optimization" / "member1_matrix_adapter.py"
 COMPACTOR = PROJECT_ROOT / "member2" / "optimization" / "c499_pattern_compaction.py"
@@ -94,6 +94,8 @@ def verify_fresh_matrix():
 
 
 def main():
+    import argparse
+
     parser = argparse.ArgumentParser(
         description="Run the VISTA C499 integration workflow."
     )
@@ -105,7 +107,8 @@ def main():
     args = parser.parse_args()
 
     required_files = [
-        MATRIX_FILE, ATPG_FILE, ADAPTER, COMPACTOR, REPORT_CREATOR, PYTHON
+        BENCHMARK, MATRIX_FILE, ATPG_FILE, ADAPTER,
+        COMPACTOR, REPORT_CREATOR, PYTHON,
     ]
     missing = [path for path in required_files if not path.is_file()]
     if missing:
@@ -115,28 +118,28 @@ def main():
 
     print("VISTA C499 integration workflow", flush=True)
 
-    # 1. Convert Member 1's matrix to Member 2's record format.
+    # 1. Convert the original matrix into Member 2's record format.
     run_python(ADAPTER, str(MATRIX_FILE), str(RECORDS_FILE))
 
-    # 2. Compact patterns.
+    # 2. Compact the patterns.
     run_python(COMPACTOR)
 
     # 3. Check compaction against the original detection mappings.
     verify_compaction()
 
-    # 4. Create a reduced ATPG report.
+    # 4. Create the reduced ATPG report.
     run_python(REPORT_CREATOR)
 
-    # 5. Regenerate the detection matrix.
+    # 5. Regenerate the detection matrix using the local engine.
     env = os.environ.copy()
     env["PATH"] = str(IVERILOG_BIN) + os.pathsep + env.get("PATH", "")
 
     matrix_command = [
         PYTHON, "-m", "vista.matrix",
-        "benchmarks/c499.bench",
+        str(BENCHMARK),
         "--model", "stuck-at",
-        "--patterns", REDUCED_REPORT.name,
-        "--json", FRESH_MATRIX.name,
+        "--patterns", str(REDUCED_REPORT),
+        "--json", str(FRESH_MATRIX),
     ]
 
     if args.verify:
@@ -145,9 +148,9 @@ def main():
     else:
         print("\nIndependent reference verification: SKIPPED", flush=True)
 
-    run_command(matrix_command, MEMBER1_ROOT, env)
+    run_command(matrix_command, PROJECT_ROOT, env)
 
-    # 6. Check the regenerated matrix.
+    # 6. Verify the regenerated matrix.
     verify_fresh_matrix()
 
     print("\nSUCCESS: C499 workflow and coverage checks passed.", flush=True)
