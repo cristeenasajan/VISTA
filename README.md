@@ -505,3 +505,41 @@ VISTA is a software-based VLSI testing and analysis platform. Its
 current simulation and structural-analysis results do not, by
 themselves, demonstrate silicon measurements or physical-design PPA
 improvements.
+## C499 Fault Analysis and Pattern Compaction
+
+VISTA includes a reproducible C499 stuck-at fault-analysis workflow with pattern compaction and coverage-preservation checks.
+
+### Verified results
+
+- Benchmark: C499
+- Fault model: Stuck-at
+- Original test patterns: 138
+- Compacted test patterns: 75
+- Pattern-count reduction: 45.65%
+- Total faults evaluated: 758
+- Detected faults after compaction: 750
+- Fault coverage: 98.94%
+- Weighted fault coverage: 99.20%
+- Originally detectable faults retained: 750/750
+- Independent reference check: AGREES
+
+Eight faults remain undetected, consistent with the original reference matrix.
+
+### Reproduce the workflow on Windows
+
+Install Python 3.11 and the dependencies listed in `requirements.txt`, then run:
+
+```cmd
+python -m venv .venv
+.venv\Scripts\python.exe -m pip install -r requirements.txt
+.venv\Scripts\python.exe -m pytest -v
+.venv\Scripts\python.exe member2\optimization\run_c499_integration.py --verify
+```
+
+The integration requires the repository's C499 benchmark, reference input files, and VISTA engine package.
+
+### Validation performed
+
+The workflow was run successfully from a fresh Git clone. All nine automated tests passed, the independent reference check agreed, and the generated matrix retained all 750 originally detectable faults.
+
+These results validate the C499 stuck-at workflow; they do not establish that every VISTA feature or benchmark has been independently validated.
