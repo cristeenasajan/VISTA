@@ -2403,40 +2403,38 @@ chart_df = coverage_df.set_index(
 
 st.bar_chart(
     chart_df,
+
     use_container_width=True,
 )
 
 
 # ============================================================
-# FAULT DIAGNOSIS
+# Fault Diagnosis — C432
 # ============================================================
 
 st.html(
     """
     <div class="section-title">
-        Fault Diagnosis
-    </div>
+    Fault Diagnosis — C432
+</div>
     """
 )
 
-
-diagnosis = data.get(
-    "diagnosis",
-    {}
+diagnosis = (
+    data.get("benchmarks", {})
+    .get("c432", {})
+    .get("diagnosis", {})
 )
 
-
 if not diagnosis:
-
     diagnosis = {
-
-        "Hard": 3,
-
-        "Medium": 8,
-
-        "Easy": 403,
-
+        "hard": 0,
+        "medium": 0,
+        "easy": 0,
     }
+
+
+
 
 
 diagnosis_df = pd.DataFrame(
@@ -2605,14 +2603,15 @@ if C499_MATRIX_FILE.exists():
     except (OSError, json.JSONDecodeError, TypeError, KeyError):
         st.warning("Could not load C499 undetected faults from the reference matrix.")
 
-if not undetected:
-    undetected = {
-        "C432": [
-            "F200 — N259 — SA1",
-            "F292 — N347 — SA1",
-            "F330 — N379 — SA1",
-        ],
-    }
+if not isinstance(undetected.get("C432"), list):
+    undetected["C432"] = []
+
+if not undetected["C432"]:
+    undetected["C432"] = [
+        "F200 — N259 — SA1",
+        "F292 — N347 — SA1",
+        "F330 — N379 — SA1",
+    ]
 
 undetected_rows = []
 
@@ -2672,27 +2671,50 @@ st.html(
 )
 
 # Load the saved C432 evaluation rather than showing placeholder zeros.
-ML_RESULTS_FILE = DATA_DIR / "c432_ml_results.json"
-ml = data.get("ml", {}) if isinstance(data.get("ml", {}), dict) else {}
+# Load reproducible leave-one-benchmark-out ML evaluation.
+ML_RESULTS_FILE = DATA_DIR / "relative_cross_benchmark_ml_results.json"
+
+ml_results = {}
+c432_experiment = {}
+ml = {}
 
 if ML_RESULTS_FILE.exists():
     try:
         with ML_RESULTS_FILE.open("r", encoding="utf-8") as f:
-            saved_ml = json.load(f)
-        if str(saved_ml.get("benchmark", "")).casefold() == "c432":
-            report = saved_ml.get("classification_report", {})
-            ml = {
-                "model": "Random Forest",
-                "accuracy": report.get("accuracy", 0.0),
-                "balanced_accuracy": saved_ml.get("balanced_accuracy", 0.0),
-                "macro_f1": saved_ml.get("macro_f1", 0.0),
-                "samples": saved_ml.get("samples", 0),
-                "features": saved_ml.get("features", []),
-            }
-    except (OSError, json.JSONDecodeError, TypeError):
-        st.warning("Could not load the saved C432 ML evaluation results.")
+            ml_results = json.load(f)
 
-# Support either fraction-style values (0.93) or percentage-style values (93.0).
+        experiments = ml_results.get("experiments", [])
+
+        c432_experiment = next(
+            (
+                experiment
+                for experiment in experiments
+                if str(experiment.get("test_benchmark", "")).casefold() == "c432"
+            ),
+            {},
+        )
+
+        ml = {
+            "model": "Random Forest",
+            "features": ml_results.get("features", []),
+            "accuracy": c432_experiment.get(
+                "classification_report", {}
+            ).get("accuracy", 0.0),
+            "balanced_accuracy": c432_experiment.get(
+                "balanced_accuracy", 0.0
+            ),
+            "macro_f1": c432_experiment.get("macro_f1", 0.0),
+            "samples": c432_experiment.get("test_samples", 0),
+        }
+
+    except (OSError, json.JSONDecodeError, TypeError):
+        st.warning("Could not load cross-benchmark ML evaluation results.")
+else:
+    st.warning("Cross-benchmark ML results file was not found.")
+
+average_metrics = ml_results.get("average_metrics", {})
+
+# Convert fractions to percentages for display.
 def as_percent(value):
     try:
         number = float(value)
@@ -2700,48 +2722,56 @@ def as_percent(value):
         return 0.0
     return number * 100 if 0 <= number <= 1 else number
 
-ml_accuracy = as_percent(ml.get("accuracy", 0.0))
-ml_balanced_accuracy = as_percent(ml.get("balanced_accuracy", 0.0))
-ml_f1 = as_percent(ml.get("macro_f1", 0.0))
-ml_samples = int(ml.get("samples", 0) or 0)
+c432_accuracy = as_percent(ml.get("accuracy", 0.0))
+c432_balanced_accuracy = as_percent(ml.get("balanced_accuracy", 0.0))
+c432_macro_f1 = as_percent(ml.get("macro_f1", 0.0))
+
+average_balanced_accuracy = as_percent(
+    average_metrics.get("balanced_accuracy", 0.0)
+)
+average_macro_f1 = as_percent(average_metrics.get("macro_f1", 0.0))
+average_weighted_f1 = as_percent(average_metrics.get("weighted_f1", 0.0))
 
 st.html(
     f"""
     <div class="metric-grid">
         <div class="metric-card">
-            <div class="metric-label">Model</div>
-            <div class="metric-value">RF</div>
-            <div class="metric-label">Random Forest</div>
+            <div class="metric-label">Evaluation</div>
+            <div class="metric-value">LOBO</div>
+            <div class="metric-label">Leave-one-benchmark-out</div>
         </div>
         <div class="metric-card">
-            <div class="metric-label">Accuracy</div>
-            <div class="metric-value metric-accent">{ml_accuracy:.1f}%</div>
-            <div class="metric-label">104 test samples / 414 total</div>
+            <div class="metric-label">C432 Accuracy</div>
+            <div class="metric-value metric-accent">{c432_accuracy:.1f}%</div>
+            <div class="metric-label">{ml.get("samples", 0)} held-out samples</div>
         </div>
         <div class="metric-card">
-            <div class="metric-label">Balanced Accuracy</div>
-            <div class="metric-value metric-accent">{ml_balanced_accuracy:.1f}%</div>
-            <div class="metric-label">class-aware recall metric</div>
+            <div class="metric-label">C432 Balanced Accuracy</div>
+            <div class="metric-value metric-accent">{c432_balanced_accuracy:.1f}%</div>
+            <div class="metric-label">Held-out C432 benchmark</div>
         </div>
         <div class="metric-card">
-            <div class="metric-label">Macro F1</div>
-            <div class="metric-value metric-accent">{ml_f1:.1f}%</div>
-            <div class="metric-label">imbalance-aware metric</div>
+            <div class="metric-label">C432 Macro F1</div>
+            <div class="metric-value metric-accent">{c432_macro_f1:.1f}%</div>
+            <div class="metric-label">Held-out C432 benchmark</div>
         </div>
         <div class="metric-card">
-            <div class="metric-label">Intelligence</div>
-            <div class="metric-value">ON</div>
-            <div class="metric-label">structural fault prioritization</div>
+            <div class="metric-label">Average Balanced Accuracy</div>
+            <div class="metric-value metric-accent">{average_balanced_accuracy:.1f}%</div>
+            <div class="metric-label">Across 3 benchmarks</div>
         </div>
     </div>
     <p class="metric-label" style="margin-top: 10px;">
-        Preliminary C432 evaluation. Test-set class imbalance is substantial;
-        interpret accuracy together with balanced accuracy and Macro F1.
+        Cross-benchmark evaluation: train on two benchmarks and test on the
+        third. C432 generalization is currently weak; these results should not
+        be interpreted as strong fault-difficulty prediction performance.
+    </p>
+    <p class="metric-label">
+        Cross-benchmark averages — Macro F1: {average_macro_f1:.1f}% |
+        Weighted F1: {average_weighted_f1:.1f}%.
     </p>
     """
 )
-
-
 # ============================================================
 # ML FEATURES
 # ============================================================

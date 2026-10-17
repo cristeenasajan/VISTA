@@ -396,40 +396,29 @@ for benchmark in BENCHMARKS:
     # Extract common fields safely
     # --------------------------------------------------------
 
-    original_count = (
 
-        compaction.get(
-            "original_pattern_count"
-        )
-
+    original_count = compaction.get(
+        "original_pattern_count",
+        compaction.get("original_patterns")
     )
 
-
-    selected_count = (
-
-        compaction.get(
-            "selected_pattern_count"
-        )
-
+    selected_count = compaction.get(
+        "selected_pattern_count"
     )
 
-
-    reduction = (
-
-        compaction.get(
-            "pattern_reduction_percent"
-        )
-
+    reduction = compaction.get(
+        "pattern_reduction_percent",
+        compaction.get("pattern_reduction")
     )
 
-
-    compaction_coverage = (
-
+    compaction_coverage = compaction.get(
+        "compaction_coverage_percent",
         compaction.get(
-            "compaction_coverage_percent"
+            "fault_coverage",
+            compaction.get("coverage_of_detectable_faults")
         )
-
     )
+
 
 
     master[

@@ -18,10 +18,10 @@
             },
             "pattern_compaction": {
                 "source_file": "c17_pattern_compaction.json",
-                "original_pattern_count": null,
+                "original_pattern_count": 32,
                 "selected_pattern_count": 4,
-                "pattern_reduction_percent": null,
-                "compaction_coverage_percent": null
+                "pattern_reduction_percent": 87.5,
+                "compaction_coverage_percent": 100.0
             }
         },
         "c432": {
@@ -55,10 +55,10 @@
             },
             "pattern_compaction": {
                 "source_file": "c432_pattern_compaction.json",
-                "original_pattern_count": null,
+                "original_pattern_count": 1024,
                 "selected_pattern_count": 18,
-                "pattern_reduction_percent": null,
-                "compaction_coverage_percent": null
+                "pattern_reduction_percent": 98.2421875,
+                "compaction_coverage_percent": 100.0
             }
         },
         "c499": {
