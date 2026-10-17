@@ -543,3 +543,28 @@ The integration requires the repository's C499 benchmark, reference input files,
 The workflow was run successfully from a fresh Git clone. All nine automated tests passed, the independent reference check agreed, and the generated matrix retained all 750 originally detectable faults.
 
 These results validate the C499 stuck-at workflow; they do not establish that every VISTA feature or benchmark has been independently validated.
+
+## C499 Dataset Provenance
+
+VISTA currently contains two distinct C499 experiment datasets. Their metrics must not be combined or presented as if they came from the same run.
+
+### Reference detection-matrix experiment
+
+- Source: `member2/data/c499_detection_matrix_recheck.json`
+- Original patterns: 138
+- Reduced patterns: 75
+- Fault universe: 758 stuck-at faults
+- Detected faults: 750/758 (98.94%)
+- Undetected faults: 8
+- Verification: the regenerated reduced matrix agreed with the reference check and retained all 750 originally detectable faults.
+- Compaction reduction: 45.65%.
+
+### Legacy simulation-record experiment
+
+- Source: `member2/data/c499_simulation_results.json` and `member2/data/c499_pattern_compaction.json`
+- Simulation records: 430
+- Detected records: 429; undetected records: 1
+- Reported coverage: 99.77%
+- Pattern compaction: 1,024 to 33 (96.78% reduction), preserving all 429 detectable records in that dataset.
+
+These datasets have different fault counts and pattern sets. Treat them as separate experiments unless their generation and fault-mapping provenance is independently established. The dashboard's C499 overview uses the 758-fault reference matrix; the master-results JSON currently includes the legacy 430-record results.
