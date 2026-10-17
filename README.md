@@ -307,8 +307,7 @@ successfully and reported 100% fault coverage. The Streamlit dashboard
 launched and displayed the C17, C432, and C499 results, ML metrics,
 pattern-compaction results, and undetected-fault information. The
 standard C499 integration workflow also passed its coverage-preservation
-checks. The optional independent reference-verification path was not run
-during this validation.
+checks. A subsequent run of `run_c499_integration.py --verify` confirmed agreement with the C499 reference matrix and retained all 750 originally detectable faults after compaction.
 
 ## 8. Running the C17 Fault Simulator
 
@@ -452,7 +451,7 @@ imbalance and evaluation limitations described above.
 
 -   Complete and validate a dependency manifest for all project
     components.
--   Verify the optional independent C499 reference-verification path
+-   [x] Verify the independent C499 reference-verification path
     from a clean checkout.
 -   Remove or clearly configure the dashboard's dependency on the
     sibling `VISTA_member1` directory.
